@@ -1,0 +1,15 @@
+.header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+    width: auto;
+    height: 18px;
+}
+.listItem{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
