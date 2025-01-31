@@ -6,10 +6,16 @@ import React, { useState } from "react";
 import Modal from "./Modal/Modal";
 
 const Header = () => {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // const openModal = () => setIsModalOpen(true);
+  // const closeModal = () => setIsModalOpen(false);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="header">
@@ -23,9 +29,10 @@ const Header = () => {
         <li>BLOG</li>
       </ul>
       <img className="cart" src={cart} alt="cart" />
-      <button onClick={openModal}>Войти</button>
-
-      {isModalOpen && <Modal closeModal={closeModal} />}
+      <div>
+        <button onClick={() => setIsModalOpen(true)}>Войти</button>
+        {isModalOpen && <Modal closeModal={closeModal} />}
+      </div>
     </div>
   );
 };
