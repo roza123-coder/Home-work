@@ -4,7 +4,6 @@ import igure from "../../assets/igure.png";
 import igure2 from "../../assets/igure2.png";
 import igure3 from "../../assets/igure3.png";
 import igure4 from "../../assets/igure4.png";
-import Product from "../Product/Product";
 
 const cardData = [
   {
@@ -44,7 +43,7 @@ const CardSection = () => {
       <p className="desc">Shop our new arrivals from established brands</p>
       <div className="cardContainer">
         {cardData.map((card, index) => (
-          <Product
+          <Card
             key={index}
             image={card.image}
             title={card.title}

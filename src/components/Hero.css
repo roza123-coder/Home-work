@@ -1,31 +1,30 @@
-.hero{
-    background-image: url(../assets/hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-   position: relative;
+.hero {
+  background-image: url(../assets/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
 }
-.heroContent{
-    position: absolute;
-    bottom: 80px;
-    right: 100px;
-
+.heroContent {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
 }
-.desc{
-    margin-bottom: 0px;
+.desc {
+  margin-bottom: 20px;
 }
-.title{
-    font-size: 80px;
-    margin: 0;
+.title {
+  font-size: 80px;
+  margin: 0;
 }
-.discover{
-    margin-top: 10px;
-    margin-right: 25px;
+.discover {
+  margin-top: 10px;
+  margin-right: 25px;
 }
-.btn{
-width: 147px;
-height: 35px;
-color: white;
-background-color: black;
+.btn {
+  width: 147px;
+  height: 35px;
+  color: white;
+  background-color: black;
 }

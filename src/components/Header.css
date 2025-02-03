@@ -4,9 +4,22 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: gray;
+}
+.active-link {
+  color: rgb(193, 108, 201);
+}
 .logo {
   width: auto;
-  height: 18px;
+  height: 15px;
+}
+.cart {
+  height: 16px;
 }
 .listItem {
   display: flex;
