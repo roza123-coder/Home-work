@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CardSection from "./components/CardSection/CardSection";
@@ -10,6 +9,8 @@ import { Lookbook } from "./pages/Lookbook";
 import { Features } from "./pages/Features";
 import { Pages } from "./pages/Pages";
 import { Home } from "./pages/Home";
+import { ProductDetail } from "./pages/ProductDetail/ProductDetail";
+
 function App() {
   return (
     <div className="App">
@@ -22,9 +23,9 @@ function App() {
           <Route path="/features" element={<Features />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/product/:cardId" element={<ProductDetail />} />
+          <Route path="/*" element={<h1>Такой страницы не существует</h1>} />
         </Routes>
-        <Hero />
-        <CardSection />
         <Footer />
       </BrowserRouter>
     </div>

@@ -1,7 +1,9 @@
+import CardSection from "../../components/CardSection/CardSection";
+
 export const Shop = () => {
   return (
     <main>
-      <h1>Shop</h1>
+      <CardSection />
     </main>
   );
 };

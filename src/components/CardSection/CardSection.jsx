@@ -1,50 +1,25 @@
 import Card from "../Card/Card";
 import "./CardSection.css";
-import igure from "../../assets/igure.png";
-import igure2 from "../../assets/igure2.png";
-import igure3 from "../../assets/igure3.png";
-import igure4 from "../../assets/igure4.png";
+import { cardData } from "../../mock/mock";
+import { useNavigate, useParams } from "react-router-dom";
 
-const cardData = [
-  {
-    image: igure,
-    title: "IGURE",
-    description: "GREEN MUSCLE FIT POLO SHIRT",
-    oldCardPrice: "$229.00",
-    newCardPrice: "$129.00",
-  },
-  {
-    image: igure2,
-    title: "IGURE",
-    description: "GREEN MUSCLE FIT POLO SHIRT",
-    oldCardPrice: "$229.00",
-    newCardPrice: "$129.00",
-  },
-  {
-    image: igure3,
-    title: "IGURE",
-    description: "GREEN MUSCLE FIT POLO SHIRT",
-    oldCardPrice: "$229.00",
-    newCardPrice: "$129.00",
-  },
-  {
-    image: igure4,
-    title: "IGURE",
-    description: "GREEN MUSCLE FIT POLO SHIRT",
-    oldCardPrice: "$229.00",
-    newCardPrice: "$129.00",
-  },
-];
+const CardSection = (card) => {
+  const redirect = useNavigate();
+  // const { cardId } = useParams();
 
-const CardSection = () => {
+  
+
   return (
     <div className="cardSection">
       <h3>WOMENS FASHION</h3>
       <p className="desc">Shop our new arrivals from established brands</p>
-      <div className="cardContainer">
-        {cardData.map((card, index) => (
+      <div
+        className="cardContainer"
+      >
+        {cardData.map((card, id) => (
           <Card
-            key={index}
+            key={card.id}
+            id={card.id}
             image={card.image}
             title={card.title}
             description={card.description}
