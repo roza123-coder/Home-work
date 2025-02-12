@@ -5,17 +5,12 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const CardSection = (card) => {
   const redirect = useNavigate();
-  // const { cardId } = useParams();
-
-  
 
   return (
     <div className="cardSection">
       <h3>WOMENS FASHION</h3>
       <p className="desc">Shop our new arrivals from established brands</p>
-      <div
-        className="cardContainer"
-      >
+      <div className="cardContainer">
         {cardData.map((card, id) => (
           <Card
             key={card.id}

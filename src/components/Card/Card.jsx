@@ -29,14 +29,34 @@ const Card = ({
       <span className="oldCardPrice">{oldCardPrice} </span>
       <span className="newCardPrice">{newCardPrice}</span>
       <div className="cart">
-        <button onClick={decreaseCount} className="cart-button">
+        {/* <button onClick={decreaseCount} className="cart-button">
           -
         </button>
-
-        {}
-        <span className="quantity">{count}</span>
         <button onClick={increaseCount} className="cart-button">
-          +
+        +
+        </button> */}
+
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            decreaseCount();
+          }}
+          className="cart-button"
+        >
+          {" "}
+          -{" "}
+        </button>
+
+        <span className="quantity">{count}</span>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            increaseCount();
+          }}
+          className="cart-button"
+        >
+          {" "}
+          +{" "}
         </button>
       </div>
     </div>
