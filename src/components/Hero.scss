@@ -1,0 +1,257 @@
+// // // // // /* .hero {
+// // // // //   background-image: url(../assets/hero.png);
+// // // // //   background-repeat: no-repeat;
+// // // // //   background-size: cover;
+// // // // //   background-position: center;
+// // // // //   height: 700px;
+// // // // //   position: relative;
+// // // // // }
+// // // // // .heroContent {
+// // // // //   position: absolute;
+// // // // //   bottom: 80px;
+// // // // //   right: 80px;
+// // // // // }
+// // // // // .desc {
+// // // // //   margin-bottom: 20px;
+// // // // // }
+// // // // // .title {
+// // // // //   font-size: 80px;
+// // // // //   margin: 0;
+// // // // // }
+// // // // // .discover {
+// // // // //   margin-top: 10px;
+// // // // //   margin-right: 25px;
+// // // // // }
+// // // // // .btn {
+// // // // //   width: 147px;
+// // // // //   height: 35px;
+// // // // //   color: white;
+// // // // //   background-color: black;
+// // // // // } */
+
+// // // // //  .hero
+// // // // // background-image: url(../assets/hero.png) 
+     
+// // // // //    background-repeat: no-repeat
+// // // // //   background-size: cover
+// // // // //  background-position: center
+// // // // //   height: 700px
+// // // // //  position: relative
+
+// // // // //    &__content
+// // // // //     position: absolute
+// // // // //     bottom: 80px
+// // // // //     right: 80px
+
+// // // // //   &__desc
+// // // // //     margin-bottom: 20px
+
+// // // // //    &__title
+// // // // //     font-size: 80px
+// // // // //     margin: 0
+
+// // // // //   &__discover
+// // // // //     margin-top: 10px
+// // // // //     margin-right: 25px
+
+// // // // //   &__btn
+// // // // //     width: 147px
+// // // // //     height: 35px
+// // // // //     color: white
+// // // // //     background-color: black
+// // // // //     border: none
+
+
+// // // // // .hero
+// // // // //   background-image: url(../assets/hero.png)
+// // // // //   background-repeat: no-repeat
+// // // // //   background-size: cover
+// // // // //   background-position: center
+// // // // //   height: 700px
+// // // // //   position: relative
+
+// // // // //   &__content
+// // // // //     position: absolute
+// // // // //     bottom: 80px
+// // // // //     right: 80px
+
+// // // // //   &__desc
+// // // // //     margin-bottom: 20px
+
+// // // // //   &__title
+// // // // //     font-size: 80px
+// // // // //     margin: 0
+
+// // // // //   &__discover
+// // // // //     margin-top: 10px
+// // // // //     margin-right: 25px
+
+// // // // //   &__btn
+// // // // //     width: 147px
+// // // // //     height: 35px
+// // // // //     color: white
+// // // // //     background-color: black
+// // // // //     border: none
+
+// // // // .hero
+// // // //   background-image url(../assets/hero.png)
+// // // //   background-repeat no-repeat
+// // // //   background-size cover
+// // // //   background-position center
+// // // //   height 700px
+// // // //   position relative
+
+// // // //   &__content
+// // // //     position: absolute
+// // // //     bottom: 80px
+// // // //     right: 80px
+
+// // // //   &__desc
+// // // //     margin-bottom: 20px
+
+// // // //   &__title
+// // // //     font-size: 80px
+// // // //     margin: 0
+
+// // // //   &__discover
+// // // //     margin-top: 10px
+// // // //     margin-right: 25px
+
+// // // //   &__btn
+// // // //     width: 147px
+// // // //     height: 35px
+// // // //     color: white
+// // // //     background-color: black
+// // // //     border: none
+
+
+// // // .hero{
+// // //   background-image: url(../assets/hero.png) no-repeat/cover/center
+// // //   // background-repeat: 
+// // //   // background-size: cover
+// // //   // background-position: center
+// // //   height: 700px
+// // //   position: relative
+
+// // //   &__content
+// // //     position: absolute
+// // //     bottom: 80px
+// // //     right: 80px
+
+// // //   &__desc
+// // //     margin-bottom: 20px
+
+// // //   &__title
+// // //     font-size: 80px
+// // //     margin: 0
+
+// // //   &__discover
+// // //     margin-top: 10px
+// // //     margin-right: 25px
+
+// // //   &__btn
+// // //     width: 147px
+// // //     height: 35px
+// // //     color: white
+// // //     background-color: 
+// // //     border: none
+// // // }
+
+// // .hero
+// //   background-image: url(../assets/hero.png)
+// //   background-repeat: no-repeat
+// //   background-size: cover
+// //   background-position: center
+// //   height: 700px
+// //   position: relative
+
+// //   &__content
+// //     position: absolute
+// //     bottom: 80px
+// //     right: 80px
+
+// //   &__desc
+// //     margin-bottom: 20px
+
+// //   &__title
+// //     font-size: 80px
+// //     margin: 0
+
+
+// //   &__discover
+// //     margin-top: 10px
+// //     margin-right: 25px
+
+// //   &__btn
+// //     width: 147px
+// //     height: 35px
+// //     color: white
+// //     background-color: black
+// //     border: none
+
+
+// .hero
+//   background-image: url(../assets/hero.png)
+//   background-repeat: no-repeat
+//   background-size: cover
+//   background-position: center
+//   height: 700px
+//   position: relative
+
+//   &__content
+//     position: absolute
+//     bottom: 80px
+//     right: 80px
+
+//   &__desc
+//     margin-bottom: 20px
+
+//   &__title
+//     font-size: 80px
+//     margin: 0
+
+//   &__discover
+//     margin-top: 10px
+//     margin-right: 25px
+
+//   &__btn
+//     width: 147px
+//     height: 35px
+//     color: white
+//     background-color: black
+//     // border: none
+
+
+.hero {
+background: url(../assets/hero.png) no-repeat center/cover;
+  height: 700px;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 80px;
+    margin: 0;
+  }
+
+  &__discover {
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  &__btn {
+    width: 147px;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border: none;
+  }
+}
